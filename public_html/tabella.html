@@ -14,26 +14,79 @@ and open the template in the editor.
         <div>
             Se vogliamo inserire delle immagini, utilizziamo il tag "src" (source)
         </div>
-        <table border ="1">
+        <table border ="1" style = "background-color: paleturquoise">
             <tr>
-                <td></td>
-                <td><img src = "immagini/fb.jpg" alt ="facebook" /></td>
-                <td><img src = "immagini/smario.jpg" alt ="super mario" /></td>
+                <td ></td>
+                <td><img src = "immagini/fb.jpg" alt ="facebook" style ="width: 100px; height: 100px" /></td>
+                <td><img src = "immagini/smario.jpg" alt ="super mario" style ="width: 100px; height: 100px" /></td>
                 <td></td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td><img src = "immagini/twitter.jpg" alt ="twitter" /></td>
+                <td><img src = "immagini/twitter.jpg" alt ="twitter" style ="width: 100px; height: 100px"/></td>
             </tr>
             <tr>
-                <td><img src = "immagini/smario.jpg" alt ="super mario" /></td>
+                <td><img src = "immagini/smario.jpg" alt ="super mario" style ="width: 100px; height: 100px"/></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </table>
+        <br/>
+        <br/>
+        Di seguito un esempio dei vari "allineamenti" all'interno delle celle!<br/>
+        <table border ="1" style = "background-color: plum">
+            <tr>
+                <td style="text-align: left; vertical-align: top; width: 50px; height: 50px">1</td>
+                <td style="text-align: center; vertical-align: top; width: 50px">2</td>
+                <td style="text-align: right; vertical-align: top; width: 50px">3</td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: middle; height: 50px">4</td>
+                <td style="text-align: center; vertical-align: middle">5</td>
+                <td style="text-align: right; vertical-align: middle">6</td>
+            </tr>
+            <tr>
+                <td style="text-align: left; vertical-align: bottom; height: 50px">7</td>
+                <td style="text-align: center; vertical-align: bottom">8</td>
+                <td style="text-align: right; vertical-align: bottom">9</td>
+            </tr>
+        </table>
+        <br/>
+        Nell'esempio seguente andiamo ad utilizzare gli attributi "colspan" e "rowspan"<br/>
+        <table border ="1" style = "width: 300px; height: 300px; color: darkblue; background-color: yellow">
+                <tr>
+                    <td style="text-align: center">A</td>
+                    <td style="text-align: center">B</td>
+                    <td style="text-align: center">C</td>
+                    <td style="text-align: center">D</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center" colspan ="4">E</td>
+                    <td style="text-align: center">F</td>
+                    <td style="text-align: center">G</td>
+                    <td style="text-align: center">H</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center" rowspan="2">I</td>
+                    <td style="text-align: center" colspan ="3">L</td>
+                    
+                </tr>
+                 <tr>
+                     <td style="text-align: center">O</td>
+                    <td style="text-align: center">P</td>
+                    <td style="text-align: center" colspan ="2" rowspan="2">Q</td>
+                    <td style="text-align: center">R</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">S</td>
+                    <td style="text-align: center">T</td>
+                    <td style="text-align: center">U</td>
+                    <td style="text-align: center">V</td>
+                </tr>
+            </table>
         
     </body>
 </html>
