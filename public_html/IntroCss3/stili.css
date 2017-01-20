@@ -1,0 +1,110 @@
+
+/* 
+    Created on : 18-gen-2017, 10.24.19
+    Author     : tss
+*/
+
+body {
+    background-color: white;
+} /* indichiamo il colore di sfondo di tutta la pagina*/
+
+table {
+    margin-left: auto; 
+    margin-right: auto;
+    border-color: blue; 
+    border-width: 5px; 
+    border-style: solid; 
+    background-color: yellow; 
+    border-spacing: 0;
+} /* indichiamo che la tabella viene centrata automaticamente (orizzontalmente) nella pagina*/
+
+thead {
+    color: blue; 
+    background: red; 
+    font-size: 60px}
+
+tfoot {
+    color: red; 
+    background-color: blue; 
+    font-size: 20px}
+
+td {
+    width: 150px; 
+    height: 75px; 
+    border-style: solid; 
+    border-color: black; 
+    border-width: 1px}
+
+#fuoco {
+    background-color: violet
+}
+
+#intestazione {
+    text-align: center
+}
+
+.brr {
+    background-color: blue
+}
+.ultima_riga {
+    background-color: blueviolet
+}
+
+/* 
+border-spacing: 10px 50px; = indica lo spazio tra le celle di una tabella, il primo è la spaziatura in orizzontale, 
+                             la seconda è la spaziatura in verticale
+*/
+
+
+.dom {
+    color: red;
+    width: 30px;
+    height: 30px;
+}
+
+#t_calendario {
+    background-color: red;
+    text-align: center;
+}
+
+.allineam {
+    vertical-align: top;
+}
+
+#t_super {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#t_gennaio { 
+    width: 100px;
+    height: 100px;
+    background-color: buttonhighlight;
+}
+
+#t_febbraio {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+#t_marzo {
+    width: 100px;
+    height: 100px;
+    background-color: mediumseagreen;
+}
+
+#gennaio td {
+    width: 30px;
+    height: 30px;
+}
+#febbraio td {
+    width: 30px;
+    height: 30px;
+}
+#marzo td {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <style type="text/css">
+            thead {color: red; background: blue; font-size: 60px}
+            table {border-color: black; border-width: 10px; border-style: solid; background-color: greenyellow}
+            tfoot {color: blue; background-color: red; font-size: 20px}
+            td {width: 150px; height: 75px; border-style: solid; border-color: black; border-width: 1px}
+            #fuoco {background-color: red}
+            #intestazione {text-align: center}
+            .ultima_riga {background-color: aqua}
+        </style>
+
+        <title>Intro CSS3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td id="intestazione" colspan="8"> Intestazione Tabella</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="fuoco"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="fuoco"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="fuoco"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="fuoco"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="ultima_riga">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="8" style="text-align: center">Piè di Tabella</td>
+                    </tr>
+                </tfoot>
+            </table>            
+            <br/>
+            <p style="color: blue"> 
+                Fogli di stile "IN LINEA": qui utilizziamo l'attributo style inserendolo all'interno di un tag <br/>
+                passandogli un nome proprietà "color:" ed indicandone il valore "blue". <br/> 
+                Più proprietà possono essere scritte intervallandole con il ; <br/>
+                Questa metodologia ha il pregio di far capire immediatamente a quale tag <br/> 
+                è riferito l'attributo "style" perchè vi è scritto direttamente al suo interno. <br/>
+                Il difetto conseguente è quello che il tag potrebbe assumere una lunghezza esagerata</p><br/>
+            <p style="color: blue"> 
+                Fogli di stile "INCORPORATI": qui utilizziamo il tag "style" speficando il tipo (type="txt/css"), <br/>
+                a cosa lo vogliamo applicare (thead; td; #"nome"; etc.) e quali opzioni deve contenere e queste ultime vanno <br/>
+                scritte tra parantei graffe { color: blue; font-size: 20px }. <br/>
+                C'è la possibilità di specificare l'attributo "id" all'interno di uno o più tag (td id="foto") e richiamarlo con <br/>
+                il foglio di stile incorporato tramite il carattere # (in automatico ci propone l'elenco di tutti gli id che <br/>
+                abbiamo specificato all'interno della stessa pagina.<br/>
+                Allo stesso modo possiamo specificare l'attributo "classe" all'interno di uno o più tag (td class="ultima_riga") <br/>
+                che verrà richiamato dal foglio di stile incorporato tramite il carattere . (si digita il "punto") e come per <br/>
+                gli "id", anche qui ci verrà proposto l'elenco delle classi che abbiamo inserito nella nostra pagina.<br/><br/>
+                La priorità con cui vengono eseguiti gli attributi del fogli di stile sono: <br/>
+                "#ID" > ".CLASS" > "TAG"<br/>
+                
+                In alto in questa pagina ci sono un paio di esempi (anche qui sotto nel codice ma non visibile perchè "commentato")<br/>
+                <!-- 
+                <style type="text/css">
+                thead {color: red; background: blue; font-size: 20px}
+                tfoot {color: blue; background-color: red; font-size: 10px}
+                #foto {background-color: red}
+                .ultima_riga {background-color: aqua}
+                </style>
+                -->
+            </p>
+
+        </div>
+    </body>
+</html>
