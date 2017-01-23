@@ -8,4 +8,36 @@ and open the template in the editor.
     Author     : tss
 */
 
-table {border-style: dashed;}
+
+
+table {
+    width: 450px; height: 450px;
+    border-style: solid;
+    background-color: greenyellow;
+}
+
+#scacchi {
+    background-color: yellow;
+}
+
+tr:nth-child(even)  { /* dispari */
+    background-color: black;
+}
+
+tr:nth-child(odd)  { /* pari */
+    background-color: whitesmoke;
+}
+
+td:nth-child(2n) {
+    background-color: white;
+}
+
+td:nth-child(2n) {
+    background-color: black;
+}
+
+
+td {
+    border-style: solid;
+    text-align: center;    
+}
