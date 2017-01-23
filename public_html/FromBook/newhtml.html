@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>HTML, XHTML e CSS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="newcss.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <br/>
+        <div title="Pag 23 del libro"><u>Field content</u> (è stato aggiunto il tag "title" dentro il div che ci fa comparire <br/>
+            il fumettino con il testo che abbiamo inserito)</div>
+        <br/>
+        <fieldset id="personal">
+            <label>Nome</label><input type="text" name="nome" size="30"/> <br/>
+            <label>Indirizzo</label><input type="text" name="indirizzo" size="30"/> <br/>
+            <label>Città</label><input type="text" name="città" size="30"/> <br/>
+            <label>Provincia</label><input type="text" name="provincia" size="3" maxlength="2"/> <br/>
+            <label>CAP</label><input type="text" name="cap" size="5" maxlength="5"/> <br/>
+            <label>Customer ID</label><input type="password" name="code" size="8"/> <br/>
+        </fieldset> <br/>
+        <p>
+            In questo esempio abbiamo creato un piccolo form (fieldset) per l'inserimento di dati che viene <br/>
+            formattato dalle istruzioni contenute nel file CSS (newcss.css)
+        </p><br/>
+        <p>
+            Ora andiamo a vedere i tipi di "Titoli" che possiamo pre-impostare
+        </p>
+        <div title="From pag 61 to pag 68"><u>"Titoli, in ordine decrescente di grandezza"</u></div><br/>
+        <div id="grosso">
+            <h1>Sono il più grosso</h1>
+            <p>
+                Fogli di stile "IN LINEA": qui utilizziamo l'attributo style inserendolo all'interno di un tag <br/>
+                passandogli un nome proprietà "color:" ed indicandone il valore "blue". <br/> 
+                Più proprietà possono essere scritte intervallandole con il ; <br/>
+                Questa metodologia ha il pregio di far capire immediatamente a quale tag <br/> 
+                è riferito l'attributo "style" perchè vi è scritto direttamente al suo interno. <br/>
+                Il difetto conseguente è quello che il tag potrebbe assumere una lunghezza esagerata<br/>
+            </p>
+            <div class="medio">
+                <h2>Io lo sono un po' meno</h2>
+                <p>
+                    Fogli di stile "INCORPORATI": qui utilizziamo il tag "style" speficando il tipo (type="txt/css"), <br/>
+                    a cosa lo vogliamo applicare (thead; td; #"nome"; etc.) e quali opzioni deve contenere e queste ultime vanno <br/>
+                    scritte tra parantei graffe { color: blue; font-size: 20px }. <br/>
+                    C'è la possibilità di specificare <span class="emph">l'attributo "id"</span> all'interno di uno o più tag (td id="foto") e richiamarlo con <br/>
+                    il foglio di stile incorporato tramite il carattere # (in automatico ci propone l'elenco di tutti gli id che <br/>
+                    abbiamo specificato all'interno della stessa pagina.<br/>
+                </p>
+                <div/>
+                <div class="medio">
+                    <h3>Ancora di meno</h3>
+                    <p>
+                    Allo stesso modo possiamo specificare l'attributo "classe" all'interno di uno o più tag (td class="ultima_riga") <br/>
+                che verrà richiamato dal foglio di stile incorporato tramite il carattere . (si digita il "punto") e come per <br/>
+                gli "id", anche qui ci verrà proposto l'elenco delle classi che abbiamo inserito nella nostra pagina.<br/><br/>
+                La priorità con cui vengono eseguiti gli attributi del fogli di stile sono: <br/>
+                <span class="emph">"#ID" > ".CLASS" > "TAG"<span/><br/><p/>
+                    <div/>
+                    <div/>
+                    <h4>Mi sto rimpicciolendo</h4>
+                    <h5>Sono un nano</h5>
+                    <h6>Scompaiooooooo</h6>
+                    </body>
+                    </html>

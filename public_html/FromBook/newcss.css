@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-gen-2017, 16.16.05
+    Author     : Emilius
+*/
+
+#personal label {
+    position: absolute;
+    left: 20px;
+    font-size: 90%;
+    padding-top: .2em;
+}
+
+input {
+    margin-left: 9em;
+    margin-bottom: .2em;
+    line-height: 1.4em;
+}
