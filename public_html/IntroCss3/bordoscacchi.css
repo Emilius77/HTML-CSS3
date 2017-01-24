@@ -11,11 +11,13 @@ and open the template in the editor.
 
 
 table {
-    width: 450px; height: 450px;
+    width: 400px; height: 400px;
+    margin-top: 100px;
+    margin-left: 150px;
     border-style: solid;
-    border-color: blueviolet;
-    border-spacing: 1px 1px;
-    border-collapse: separate;
+/*    border-color: blueviolet;*/
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 table#sca tr td:last-child, 
@@ -34,7 +36,7 @@ tr:nth-child(even) td:nth-child(odd) { /* prende tutti i "td" dispari dei "tr" p
 }
 
 td {
-    border-style: solid;
+/*    border: solid 0.5px;*/
     text-align: center;  
     background-color: black;
 }
