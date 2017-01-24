@@ -18,11 +18,14 @@ table {
     border-collapse: separate;
 }
 
-#scacchi {
-    background-color: yellow;
+table#sca tr td:last-child, 
+table#sca tr td:first-child, 
+table#sca tr:first-child td, 
+table#sca tr:last-child td {
+    background-color: blue;
 }
 
-tr:nth-child(odd) td:nth-child(even) { /* prende tutti i "td" pari dei "tr" dispari */
+tr:nth-child(odd) td:nth-child(even) {  /* prende tutti i "td" pari dei "tr" dispari */
     background-color: white;
 }
 
@@ -35,3 +38,7 @@ td {
     text-align: center;  
     background-color: black;
 }
+
+
+
+

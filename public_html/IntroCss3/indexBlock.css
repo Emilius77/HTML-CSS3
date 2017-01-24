@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-gen-2017, 13.55.43
+    Author     : tss
+*/
+
+
+#es1 div { /* gli dico che voglio lavorare su ciò che è contenuto nel contenitore con "id es1" */
+    height: 50px; /* altezza */
+    width: 150px; /* larghezza */
+    border: solid 1px blue;
+    margin: 2px 20px;
+    text-align: center;
+    background-color: red;
+}
+
+#es1 div:nth-of-type(2), 
+#es1 div:last-of-type {
+    border-right: solid 5px blue;
+}
+
+#es1 div:nth-child(even) {
+    width: 350px;
+}
+
+#es1 div:nth-child(n+3) {
+    background-color: green;
+}
+
+#es1 {
+    background-color: lightpink;
+}
