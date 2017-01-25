@@ -13,11 +13,10 @@ and open the template in the editor.
 table {
     width: 400px; height: 400px;
     margin-top: 100px;
-    margin-left: 150px;
+    margin-left: 100px;
     border-style: solid;
-/*    border-color: blueviolet;*/
-    border-spacing: 0;
-    border-collapse: collapse;
+    border-color: blueviolet;
+   border-collapse: collapse;
 }
 
 table#sca tr td:last-child, 
@@ -27,11 +26,9 @@ table#sca tr:last-child td {
     background-color: blue;
 }
 
-tr:nth-child(odd) td:nth-child(even) {  /* prende tutti i "td" pari dei "tr" dispari */
-    background-color: white;
-}
-
-tr:nth-child(even) td:nth-child(odd) { /* prende tutti i "td" dispari dei "tr" pari */
+tr:nth-child(odd) td:nth-child(even),                /* prende tutti i "td" pari dei "tr" dispari */
+tr:nth-child(even) td:nth-child(odd)                 /* prende tutti i "td" dispari dei "tr" pari */   
+{  
     background-color: white;
 }
 

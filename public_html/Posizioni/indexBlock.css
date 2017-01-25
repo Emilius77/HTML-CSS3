@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-gen-2017, 13.55.43
+    Author     : tss
+*/
+
+
+div#es1 {
+    background-color: lightpink;
+    max-width: 800px;           /* vado ad indicare la larghezza massima del mio "div" */
+    height: 300px;
+    border: solid 2px green;
+    margin: auto;
+    overflow: auto;         /* gestisce i contenuti che fuoriescono dal contenitore (celle div secondarie
+                            che fuoriescono dal contenitore div principale) */
+    
+}
+
+div#es1 div             /* gli dico che voglio lavorare su ciò che è contenuto nel contenitore con "id es1" */
+{ 
+    height: 50px;       /* altezza */
+    width: 150px;       /* larghezza */
+    border: solid 1px blue;
+    margin: 10px;
+    padding: 15px;      /* indica la distanza del contenuto dal bordo della nostra cella */
+    display: block;
+    
+    border-top-left-radius: 20px ;  /* serve per fare gli angloli arrotondati */
+    border-bottom-right-radius: 20px;
+    
+    box-shadow: 2px 2px 5px yellow;
+}
+
+div#es1 div:nth-child(even) {
+    float: right;
+}
+
+div#es1 div:nth-child(odd) {
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    border: solid;
+}
+
+div#es1 div:nth-child(6) {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    border: solid 2px red;
+    background-color: white;
+}
+
+
