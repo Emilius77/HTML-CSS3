@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-gen-2017, 9.03.46
+    Author     : tss
+*/
+
+
+table#t1 {
+    width: 250px;
+    height: 250px;
+    border: solid 1px green;
+}
+
+table#t1 td {
+    border: solid blue 1px;
+}
+
+table#t1 td:hover {
+    background-color: red;
+}
+
+/*--------------------------------*/
+
+
+table#t2 {
+/*    width: 250px;
+    height: 250px;*/
+    border: solid 2px red;
+    position: relative;
+}
+
+table#t2 td {
+    border: solid green 1px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#t2 .foto {
+    width: 35px;
+    height: 35px;
+    opacity: .5;
+}
+
+table#t2 td:hover .foto {
+    opacity: 1;
+    position: absolute;
+    left: 280px;
+    top: -100px;
+    width: 70px;
+    height: 70px;
+}
+
+table#t2 .descrizione {
+    text-align: center;
+    display: none;
+}
+
+table#t2 td:hover .descrizione {
+    position: absolute;
+    left: 250px;
+    top: -160px;
+    display: block;
+    color: blue;
+    background-color: yellow;
+}
+
+table#t2 td.sf:hover {
+    background-color: greenyellow;
+} 
