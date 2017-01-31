@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-gen-2017, 23.59.23
+    Author     : Emilius
+*/
+
+body {
+  text-align:center;
+}
+header {
+  border: solid 1px gray;
+  height: 20px
+}
+
+
+header div {
+  float: left;
+}
+
+header div.iconeFinestra {
+  float: right;
+}
+
+div.iconeFinestra {
+  width: 60px;
+  text-align: center;
+  border: solid 1px gray;
+}
+
+header div.iconeFinestra:hover {
+  background-color: grey;
+}
+
+
+nav ul li {
+  list-style: none;
+  margin: 0px 20px 0px 10px;
+  padding: 0px;
+  float: left;
+  cursor: default;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li:hover {
+  background-color: grey;
+}
+
+nav ul li:hover ul {
+  display: block;
+  clear: both;
+  z-index: 100;
+  position: absolute;  
+  background-color: #ccc;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+}
+
+nav ul li ul li {
+  float: none;
+  
+}
+
+#container {
+  text-align: left;
+  min-width: 300px;
+  min-height: 200px;
+  display: inline-block;
+  border: solid 2px gray;
+   
+  margin: 60px auto;
+  position:relative;
+}
+
+#contTextarea {
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  border: solid 1px red;
+  clear:both;
+}
+
+textarea#testo {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  min-width: 350px;
+  min-height: 150px;
+}
