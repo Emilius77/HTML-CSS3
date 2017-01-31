@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-gen-2017, 13.42.55
+    Author     : tss
+*/
+
+body{
+    text-align: center;
+}
+
+textarea {
+    min-width: 590px;
+    min-height: 250px;
+}
+
+div#box1 {
+    background-color: beige;
+    text-align: left;
+    display: inline-block;
+    margin: auto;
+    border: solid 1px green;
+    min-width: 600px;
+}
+
+div#box1 .pul1 {
+    float: right;
+    width: 20px;
+}
+
+div#box1 .pul1:hover {
+    background-color: red;
+}
+
+div#box1 .pul2 {
+    float: right;
+    width: 20px;
+}
+
+div#box1 .pul2:hover {
+    background-color: red;
+}
+
+div#box1 .pul3 {
+    float: right;
+    width: 20px;
+}
+
+div#box1 .pul3:hover {
+    background-color: red;
+}
+
+div#box2 {
+    background-color: buttonshadow;
+    margin: auto;
+    border: solid 1px #33ffff;
+    position: relative;
+}
+
+div#box3 {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: solid 1px blueviolet;
+}
+
+div.menu1 {
+    float: left;
+    position: relative;
+    display: inline;
+    width: 80px;
+    text-align: center;
+}
+
+div.menu1:hover {
+    background-color: gray;
+}
+
+div.menu1:hover .menu2 {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    display: block;
+    color: blue;
+}
+
+div.menu1 div.menu2 {
+    display: none;
+}
+
+/*div.menu2 p {
+    display:inherit;
+}*/
+
+
+
+
+
+
