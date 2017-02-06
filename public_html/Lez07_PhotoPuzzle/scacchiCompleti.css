@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6-feb-2017, 16.55.47
+    Author     : Emilius
+*/
+
+table {
+    margin: auto;
+    margin-top: 150px;
+    width: 450px; height: 450px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-spacing: 1px 1px;
+    border-collapse: separate;
+}
+
+tr:nth-child(odd) td:nth-child(even) { /* prende tutti i "td" pari dei "tr" dispari */
+    background-color: white;
+}
+
+tr:nth-child(even) td:nth-child(odd) { /* prende tutti i "td" dispari dei "tr" pari */
+    background-color: white;
+}
+
+td {
+    border-style: solid;
+    text-align: center;  
+    background-color: black;
+}
+
+/*table td:hover {
+    background-color: red;
+}*/
+
+td:hover {
+    opacity: 1;
+}
+
+td:after {
+    position: absolute;
+    top: 170px;
+    content: "Td (cella) n: ";
+    color: red;
+}
+
+td:after {
+    position: absolute;
+    left: 350px;
+    content: "Td (cella) n: ";
+    color: red;
+}

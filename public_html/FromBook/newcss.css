@@ -20,3 +20,24 @@ input {
     margin-bottom: .2em;
     line-height: 1.4em;
 }
+
+p {
+    color: red;
+}
+
+p.group {
+    color: blue;
+}
+
+p#one {
+    color: green;
+}
+
+p#one {
+    color: magenta;
+}
+
+p:first-letter {
+    font-size: 24px;
+    color: black;
+}
