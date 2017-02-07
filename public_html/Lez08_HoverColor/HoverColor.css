@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-feb-2017, 13.55.59
+    Author     : tss
+*/
+
+
+
+div {
+    text-align: center;
+}
+
+div#letter {
+    width: 900px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    border: 2px solid red;
+    transform: rotate(360deg);
+}
+
+div#letter div {
+    transition: all 3s;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+    font-size: 48px;
+    width: 150px;
+    height: 150px;
+    background-color: graytext;
+}
+
+div#letter div:nth-child(1):hover {
+    font-size: 140px;
+    color: greenyellow;
+    background-color: orange;
+    transform: rotatez(-360deg);
+    border-radius: 100%;
+}
+
+div#letter div:nth-child(2):hover {
+    font-size: 140px;
+    color: blue;
+    background-color: yellow;
+    transform: rotatey(-360deg);
+}
+
+div#letter div:nth-child(3):hover {
+    font-size: 140px;
+    color: red;
+    background-color: green;
+    transform: rotatex(-360deg);
+}
+
+div#letter div:nth-child(4):hover {
+    font-size: 140px;
+    color: black;
+    background-color: red;
+    transform: rotate(360deg);
+}
+
+div#letter div:nth-child(5):hover {
+    font-size: 140px;
+    color: violet;
+    background-color: cyan;
+    transform: rotatey(360deg);
+}
+
+div#letter div:nth-child(6):hover {
+    font-size: 140px;
+    color: whitesmoke;
+    background-color: black;
+    transform: rotateX(360deg);
+}
