@@ -9,12 +9,111 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function inverti() {
+                alert("Test funzione inverti");
+
+                /* variabile locale */
+                var r = prompt("Inserisci un nome", "");
+                var lunghezza = r.length;
+                var r1 = "Hai scritto: " + r + "\n";
+                var r2 = "lunghezza: " + lunghezza + "\n";
+                var r3 = "tipo lunghezza: " + (typeof lunghezza) + "\n";
+                var r4 = "tipo prompt r: " + (typeof r) + "\n";
+                var testLung = r.length > 5;
+                var r5 = "test lung: " + testLung + "\n";
+                var r6 = "tipo test: " + (typeof testLung) + "\n";
+
+                alert(r1 + r2 + r3 + r4 + r5 + r6);
+
+                if (testLung) {
+                    alert("Il nome ha una lunghezza ok!")
+                } else {
+                    alert("Il nome è troppo corto!")
+                }
+
+                var car = r.charAt(3) //4°carattere
+                alert("4° carattere: " + car)
+
+                /*
+                 var s = ""
+                 for (var i = r.length; i >= 0; i--) {
+                 s += r.charAt(i)
+                 }
+                 alert(s)
+                 */
+
+                var s = reverse(r);
+                alert(s)
+            }
+
+            function reverse(x) {
+                var s = "";
+                if (typeof x != "string") {
+                    console.log("errore tipo di variabile")
+                }
+                for (var i = x.length; i >= 0; i--) {
+                    s += x.charAt(i)
+                }
+                return s;
+            }
+
+            function scriviInverso() {
+                var scritta = document.getElementById("nomeutente").value;
+                /*alert("scriviInverso: " + scritta)*/
+                var rev = reverse(scritta)
+                /*alert("scriviInverso: " + rev)*/
+                document.getElementById("nomeutente").value = rev
+            }
+            
+            function somma2Numeri() {
+                var a = prompt("primo numero")
+                var b = prompt("secondo numero")
+                
+                var n1 = parseInt(a, 10)
+                var n2 = parseInt(b, 10)
+                
+                alert(n1+n2)
+            }
+            
+            function numEsadec(x) {
+                var a = prompt("ins. num esadec")
+                alert(parseInt(a, 16))
+            }
+        </script>
+
     </head>
-    <body>
-        <div></div>
-        <input type="Button" value="Clicca QUI" onclick="alert('Ciuuuuuppaaaaaaaaa')">  <!--qui abbiamo solo una finestrella di errore-->
-        <input type="Button" value="Clicca QUI 2" onclick="confirm('Ciuuuuuppaaaaaaaaa?')">  <!--qui abbiamo solo una finestrella che ci chiede una conferma-->
-        <input type="Button" onclick="r=prompt('Hai detto qualcosa?',''); alert(r)" value="prompt">  <!--qui abbiamo solo una finestrella di input che richiede immissione di dati-->
-        <input type="Button" onclick="alert('prima hai scritto: ' + r)" value="cosa ho scritto prima?">
+    <body><br/><br/>
+        <div>
+            <!--qui abbiamo un pulsante che genera una finestrella di errore-->
+            <input type="Button" value="Clicca QUI" onclick="alert('Ciuuuuuppaaaaaaaaa')"> 
+        </div><br/><br/>
+        <div>
+            <!--qui abbiamo un pulsante che genera una finestrella di errore che possiamo anche chiudere cliccando su "cancel"-->
+            <input type="Button" value="Clicca QUI 2" onclick="confirm('Ciuuuuuppaaaaaaaaa?')">  
+        </div><br/><br/>
+        <div>
+            <!--qui abbiamo un pulsante che genera una finestrella di input che richiede immissione di dati-->
+            <input type="Button" onclick="r = prompt('Hai detto qualcosa?', ''); alert(r)" value="prompt">  
+        </div><br/><br/>
+        <div>
+            <!--qui abbiamo un pulsante che genera una finestrella che va a richiamare i dati inseriti in precedenza-->
+            <input type="Button" onclick="alert('prima hai scritto: ' + r)" value="cosa ho scritto prima?">  
+        </div><br/><br/>
+        <div>
+            <!--qui abbiamo un pulsante che racchiude tutte le funzioni precedenti legate allo "script" nella head del file -->
+            <input type="Button" value="Funzione" onclick="inverti()"> 
+        </div><br/><br/>
+        <div>
+            <input type="text" id="nomeutente">
+            <input type="button" onclick="scriviInverso()" value="inv.">
+        </div><br/><br/>
+        <div>
+            <input type="button" onclick="somma2Numeri()" value="somma">
+        </div><br/><br/>
+        <div>
+            <input type="button" onclick="numEsadec()" value="conv. esadec">
+        </div>
     </body>
 </html>
