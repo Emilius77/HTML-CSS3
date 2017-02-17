@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function scrivi(x) {
+                document.getElementById("result").innerHTML += x
+            }
+            
+            function cancella() {
+                confirm('sicuro di voler cancellare');
+                var r = confirm;
+                var x = "";
+                result.innerHTML=x;
+            }
+
+        </script>
+    </head>
+    <body><br/>
+        <div>Macchina da Srivere</div><br/><br/><br/>
+        <div id="tastiera">
+            <input type="button" onclick="scrivi(this.value)" value="Q">
+            <input type="button" onclick="scrivi(this.value)" value="W">
+            <input type="button" onclick="scrivi(this.value)" value="E">
+            <input type="button" onclick="scrivi(this.value)" value="R">
+            <input type="button" onclick="scrivi(this.value)" value="T">
+            <input type="button" onclick="scrivi(this.value)" value="Y">
+            <input type="button" onclick="scrivi(this.value)" value="U">
+            <input type="button" onclick="scrivi(this.value)" value="I">
+            <input type="button" onclick="scrivi(this.value)" value="O">
+            <input type="button" onclick="scrivi(this.value)" value="P"><BR/>
+            <input type="button" onclick="scrivi(this.value)" value="A">
+            <input type="button" onclick="scrivi(this.value)" value="S">
+            <input type="button" onclick="scrivi(this.value)" value="D">
+            <input type="button" onclick="scrivi(this.value)" value="F">
+            <input type="button" onclick="scrivi(this.value)" value="G">
+            <input type="button" onclick="scrivi(this.value)" value="H">
+            <input type="button" onclick="scrivi(this.value)" value="J">
+            <input type="button" onclick="scrivi(this.value)" value="K">
+            <input type="button" onclick="scrivi(this.value)" value="L"><BR/>
+            <input type="button" onclick="scrivi(this.value)" value="Z">
+            <input type="button" onclick="scrivi(this.value)" value="X">
+            <input type="button" onclick="scrivi(this.value)" value="C">
+            <input type="button" onclick="scrivi(this.value)" value="V">
+            <input type="button" onclick="scrivi(this.value)" value="B">
+            <input type="button" onclick="scrivi(this.value)" value="N">
+            <input type="button" onclick="scrivi(this.value)" value="M"><BR/><BR/>  
+            <input type="button" onclick="scrivi('&nbsp')" value="SPACE">
+            <input type="button" onclick="scrivi('<br>')" value="ENTER">
+            <input type="button" onclick="cancella()" value="RESET">
+        </div>
+        <div id="result">
+        </div>
+    </body>
+</html>
