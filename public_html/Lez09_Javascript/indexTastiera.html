@@ -9,23 +9,24 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="indexTastiera.css" rel="stylesheet" type="text/css"/>
+        
         <script>
             function scrivi(x) {
-                document.getElementById("result").innerHTML += x
+                document.getElementById("pagina").innerHTML += x;
             }
             
             function cancella() {
                 confirm('sicuro di voler cancellare');
                 var r = confirm;
-                var x = "";
-                result.innerHTML=x;
+                var x = " ";
+                pagina.innerHTML=x;
             }
 
         </script>
     </head>
     <body><br/>
-        <div>Macchina da Srivere</div><br/><br/><br/>
+        <div id="pagina"></div><br/><br/><br/>
         <div id="tastiera">
             <input type="button" onclick="scrivi(this.value)" value="Q">
             <input type="button" onclick="scrivi(this.value)" value="W">
