@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-feb-2017, 9.19.58
+    Author     : tss
+*/
+
+table {
+  border: solid 1px gray;
+  border-collapse: collapse;
+}
+table tr td {
+  border: solid 1px gray;
+  min-width: 20px;
+  min-height: 20px;
+  height: 20px;
+}
+
+#comandi {
+  border: solid 1px blue;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+}
+
+#comandi, #lavagna {
+  float: left;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+}
+
+input[type=text] {
+   width: 30px;
+}
+#pCrea {
+  margin: auto;
+  display: block;
+  margin-top: 3px;
+}
+
+#lavagna {
+  padding: 10px;
+  border: solid 1px blue;
+  margin: 5px;
+  
+}
