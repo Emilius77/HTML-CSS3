@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>HTML5_01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+                <table border="2" style="width: 500px; height: 400px" >
+                    <caption>SCHEDA ISCRIZIONE</caption>
+                    <tr>
+                        <td>Nominativo</td>
+                        <td>
+                            <input type="text" name="nominativo" id="Nominativo"/></td>
+                        <td style="text-align: center" rowspan="8"><input type="submit" name="invio" value="invio"/><input type="reset" value="RESET"></td>
+                    </tr>
+                    <tr>
+                        <td>Data di Nascita</td>
+                        <td><input type="date" name="bday"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="text" name="email" id="Email"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" name="password" id="Password"/></td>
+                    </tr>
+                    <tr>
+                        <td>Sesso:</td>
+                        <td>
+                            <input type="radio" name="sesso" id="S_Maschio"/>Maschio<br>
+                            <input type="radio" name="sesso" id="S_Femmina"/>Femmina</td>
+                    </tr>
+                    <tr>
+                        <td>Sport:</td>
+                        <td>
+                            <input type="checkbox" name="sport" id="Sp_Nuoto"/>Nuoto<br>
+                            <input type="checkbox" name="sport" id="Sp_Calcio"/>Calcio<br>
+                            <input type="checkbox" name="sport" id="Sp_Tennis"/>Tennis<br>
+                            <input type="checkbox" name="sport" id="Sp_Pallavolo"/>Pallavolo</td>
+                    </tr>
+                    <tr>
+                        <td>Note:</td>
+                        <td>
+                            <textarea cols="40" rows="6" name="Note" id="Note">esempio di appunti
+                                    ciao</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center;">
+                            <button type="submit">
+                                Esempio di pulsante <br>
+                                su più righe
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="temperatura">Temperatura</label></td>
+
+                        <td>
+                            <input type="range" name="temperatura" min="0" max="27" value="18">
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </form>
+            <br>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="IE10">
+                <option value="Firefox">
+                <option value="Safari">                            
+                <option value="Chrome">
+                <option value="Opera">    
+            </datalist>
+        </div>
+        <br>
+        <form>
+            test:<input type="text" name="test" id="test"/>
+        </form>
+        <br>
+        <select id="sport" multiple>
+            <optgroup label="Piscina">
+                <option selected value="Nuoto" >Nuoto  </option>
+            </optgroup>
+            <optgroup label="All'aperto">
+                <option value="Calcio" >Calcio  </option>
+                <option value="Tennis" >Tennis  </option>
+            </optgroup>
+            <optgroup label="Al chiuso">
+                <option value="Pallavolo" >Pallavolo  </option>
+            </optgroup>
+        </select>
+
+    </body>
+</html>
+

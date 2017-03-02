@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <br>
+            <br>
+            Nome: <input style="width: 150 px"> 
+            <br>
+            <br>
+            E-mail: <input style="width: 150 px"> 
+            <br>
+            <br>
+            Password: <input style="width: 100 px"
+                             type="password">
+            <br>
+            <br>
+            Sesso: <input type="radio" name="genere" value="M"> M <input type="radio" name="genere" value="F"> F
+            <br>
+            <br>
+            Sport <input type="checkbox"> Nuoto <input type="checkbox"> Calcio <input type="checkbox"> Tennis <input type="checkbox"> Pallavolo
+            <br>
+            <br>
+            <input type="button" 
+                   style="width: 100px" 
+                   value="INVIO">
+        </div>
+        <br>
+        <br>
+        <div>
+            Nell'esempio seguente andiamo ad inserire l'esercizio precedente all'interno della tabella"<br/>
+            <br/>
+            <form>
+                <table border ="1" style = "width: 500px; height: 400px">
+                    <tr style="height: 7%">
+                        <td style="text-align: center; width: 8%; color: red; background-color: yellow">Intestazione campi</td>
+                        <td style="text-align: center; width: 10%; color: red; background-color: yellow">Valore campi</td>
+                        <td style="text-align: center; width: 7%; color: red; background-color: yellow">Conferma</td>
+                    </tr>
+                    <tr style="height: 10%">
+                        <td style="text-align: center"><label for="nome">Nome</label></td>
+                        <td style="text-align: center"><input style="width: 150 px" id="nome" name="nome" placeholder="Inserisci il tuo nome!"> </td>
+                        <td style="text-align: center" rowspan = "6">
+                            <input type="submit" 
+                                   style="width: 100px" 
+                                   value="INVIO">
+                        </td>
+                    </tr>
+                    <tr style="height: 10%">
+                        <td style="text-align: center"><label for="e-mail">E-mail @</label></td>
+                        <td style="text-align: center"><input style="width: 150 px" name="e-mail" id="e-mail" placeholder="Inserisci la tua e-mail!"> </td>
+                    </tr>
+                    <tr style="height: 10%">
+                        <td style="text-align: center"><label for="pwd">Password</label></td>
+                        <td style="text-align: center"><input style="width: 150 px" type="password" name="pwd" id="pwd"> </td>
+                    </tr>
+                    <tr style="height: 15%">
+                        <td style="text-align: center">Sesso</td>
+                        <td style="text-align: left"><input type="radio" name="genere" id="sessoM"> <label for="sessoM">M </label><br>
+                            <input type="radio" name="genere" id="sessoF"> <label for="sessoF">F </label></td>
+                    </tr>
+                    <tr style="height: 15%">
+                        <td style="text-align: center">Sport</td>
+                        <td style="text-align: left"> 
+                            <input type="checkbox" name="sport" value="nuoto" id="sport1"> <label for="sport1">Nuoto </label><br>
+                            <input type="checkbox" name="sport" value="calcio" id="sport2"> <label for="sport2">Calcio </label><br>
+                            <input type="checkbox" name="sport" value="tennis" id="sport3"> <label for="sport3">Tennis </label> <br>
+                            <input type="checkbox" name="sport" value="pallavolo" id="sport4"> <label for="sport4">Pallavolo </label> <br>
+                    </tr>
+                    <tr style="height: 15%">
+                        <td style="text-align: center"><label for="note">Note</label></td>
+                        <td> 
+                            <textarea cols="40" rows="6" 
+                                      placeholder="Inserire il testo!"
+                                      name="note" id="note"></textarea>
+                        </td>
+                    </tr>
+                    <tr style="height: 15%">
+                        <td style="text-align: center" colspan="3">
+                            <button type="submit">
+                                Esempio di pulsante <br>
+                                su due righe
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br>
+        <br>
+        <form>
+            Test <input style="width: 150 px" id="test" name="test" placeholder="test di qualcosa"> 
+        </form>
+    </body>
+</html>

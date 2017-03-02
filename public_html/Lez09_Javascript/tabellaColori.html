@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery addicted</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="tabellaColori.css" rel="stylesheet" type="text/css"/>
+
+        <script>
+            function creaTabellaHTML(righe, colonne, fz) {
+                righe = parseInt(righe)
+                colonne = parseInt(colonne)
+                var html = "<table>"
+                for (var i = 0; i < righe; i++) {
+                    html += "<tr>"
+                    for (var j = 0; j < colonne; j++) {
+                        html += "<td>"
+                        html += fz(i, j)
+                        html += "</td>"
+                    }
+                    html += "</tr>"
+                }
+
+                html += "</table>"
+                return html
+            }
+
+            function crea() {
+                var r = document.getElementById("numRighe").value;
+                var c = document.getElementById("numColonne").value;
+
+                var t = creaTabellaHTML(r, c, fz_numeriCasualiColorati)
+
+
+                document.getElementById("lavagna").innerHTML = t;
+            }
+
+            function fz_numeriCasualiColorati() {
+                var n = parseInt((Math.random() * 100) + 1);
+                if (n <= 25) {
+                    var colore = "red"
+                } else if (n <= 50) {
+                    var colore = "yellow"
+                } else if (n <= 75) {
+                    var colore = "green"
+                } else {
+                    var colore = "lightblue"
+                }
+                return '<div style="background-color:' + colore + '">'
+                        + n + '</div>'
+            }
+        </script>
+
+    </head>
+    <body><br/><br/>
+        <div id="comandi">
+            <label for="numRighe">Righe:</label>
+            <input type="text" id="numRighe" value="10">
+            <label for="numColonne">Colonne:</label>
+            <input type="text" id="numColonne" value="10">
+            <input type="button" value="CREA" onclick="crea()" id="pCrea">
+        </div>
+        <div id="lavagna"></div>
+    </body>
+</html>

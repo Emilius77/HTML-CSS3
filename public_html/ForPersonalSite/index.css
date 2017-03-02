@@ -1,0 +1,169 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-feb-2017, 13.55.59
+    Author     : tss
+*/
+
+
+
+div {
+    text-align: center;
+}
+
+div#sesamo {
+    position: relative;
+    width: 900px;
+    height: 150px;
+    margin: auto;
+/*    border: 2px solid red;*/
+}
+
+div#sesamo div {
+    line-height: 150px;
+    font-size: 48px;
+    width: 150px;
+    height: 150px;
+    background-color: graytext;
+    opacity: 0;
+}
+
+div#sesamo div:nth-child(1) {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    font-size: 140px;
+    color: greenyellow;
+    background-color: orange;
+    animation: compariE;
+    animation-delay: 7s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(2) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: blue;
+    background-color: yellow;
+    transform: rotatey(-360deg);
+    animation: compariM;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(3) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: red;
+    background-color: green;
+    transform: rotatex(-360deg);
+    animation: compariI;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(4) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: black;
+    background-color: red;
+    transform: rotate(360deg);
+    animation: compariL;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(5) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: violet;
+    background-color: cyan;
+    transform: rotatey(360deg);
+    animation: compari_I;
+    animation-delay: 4s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(6) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: whitesmoke;
+    background-color: black;
+    transform: rotateX(360deg);
+    animation: compariO;
+    animation-delay: 6s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes compariE {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:red; left:0px; top:0px; opacity: 1;}
+}
+
+@keyframes compariM {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:yellow; left:150px; top:0px; opacity: 1;}
+}
+
+@keyframes compariI {
+   0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:green; left:300px; top:0px; opacity: 1;}
+}
+
+@keyframes compariL {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:orange; left:450px; top:0px; opacity: 1;}
+}
+
+@keyframes compari_I {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:cyan; left:600px; top:0px; opacity: 1;}
+}
+
+@keyframes compariO {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:black; left:750px; top:0px; opacity: 1;}
+}
