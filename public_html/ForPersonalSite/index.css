@@ -14,6 +14,17 @@ div {
     text-align: center;
 }
 
+a.block { 
+    display:block;
+    /*padding:5px; */
+    /*border:1px solid #666;*/ 
+    text-decoration: none
+}
+
+#corpo {
+    height: 590px;
+}
+
 div#sesamo {
     position: relative;
     width: 900px;
