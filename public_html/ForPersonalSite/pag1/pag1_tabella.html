@@ -9,8 +9,25 @@ and open the template in the editor.
         <title>Immagini e Tabelle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../w3.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <header class="w3-container w3-teal">
+            <br>
+            <div id="contenuto">
+            <div>
+                <div id="sesamo">
+                    <div title="Qui dobbiamo ancora decidere cosa far comparire"><a href="../index.html" class="block">E</a></div>
+                    <div title="Primi passi con HTML"><a href="../pag1/pag1.html" class="block">M</a></div>
+                    <div title="Introduzione ai CSS"><a href="../pag2/pag2.html" class="block">I</a></div>
+                    <div title="Giochi con le tabelle"><a href="../pag3/indexCss3_external.html" target="_blank" class="block">L</a></div>
+                    <div title="Photo PUZZLE"><a href="../pag4/puzzle.html" target="_blank" class="block">I</a></div>
+                    <div title="Intro a JAVASCRIPT"><a href="../pag5/newhtml.html" target="_blank" class="block">O</a></div>
+                </div><br/>
+            </div>
+        </header>  
+        <div id="contenuto">
+        <br>
         <div>
             Se vogliamo inserire delle immagini, utilizziamo il tag "src" (source)
         </div>
@@ -57,39 +74,47 @@ and open the template in the editor.
         <br/>
         Nell'esempio seguente andiamo ad utilizzare gli attributi "colspan" e "rowspan"<br/>
         <table border ="1" style = "width: 300px; height: 300px; color: darkblue; background-color: yellow">
-                <tr>
-                    <td style="text-align: center">A</td>
-                    <td style="text-align: center">B</td>
-                    <td style="text-align: center">C</td>
-                    <td style="text-align: center">D</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center; background-color: red; color: blue" colspan ="4">E</td>
-                    <td style="text-align: center; background-color: red; color: blu">F</td>
-                    <td style="text-align: center; background-color: red; color: blu">G</td>
-                    <td style="text-align: center; background-color: red; color: blu">H</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center; background-color: blue; color: red" rowspan="2">I</td>
-                    <td style="text-align: center" colspan ="3">L</td>
-                    
-                </tr>
-                 <tr>
-                     <td style="text-align: center">O</td>
-                    <td style="text-align: center">P</td>
-                    <td style="text-align: center" colspan ="2" rowspan="2">Q</td>
-                    <td style="text-align: center">R</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center">S</td>
-                    <td style="text-align: center">T</td>
-                    <td style="text-align: center">U</td>
-                    <td style="text-align: center">V</td>
-                </tr>
-            </table>
+            <tr>
+                <td style="text-align: center">A</td>
+                <td style="text-align: center">B</td>
+                <td style="text-align: center">C</td>
+                <td style="text-align: center">D</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: red; color: blue" colspan ="4">E</td>
+                <td style="text-align: center; background-color: red; color: blu">F</td>
+                <td style="text-align: center; background-color: red; color: blu">G</td>
+                <td style="text-align: center; background-color: red; color: blu">H</td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background-color: blue; color: red" rowspan="2">I</td>
+                <td style="text-align: center" colspan ="3">L</td>
+
+            </tr>
+            <tr>
+                <td style="text-align: center">O</td>
+                <td style="text-align: center">P</td>
+                <td style="text-align: center" colspan ="2" rowspan="2">Q</td>
+                <td style="text-align: center">R</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">S</td>
+                <td style="text-align: center">T</td>
+                <td style="text-align: center">U</td>
+                <td style="text-align: center">V</td>
+            </tr>
+        </table>
+        </div>
         <br/>
         <br/>
-        <a href = eserciziNatale.html><b>Next</b></a><br/>
-        <a href = pag1.html><b>Home</b></a><br/>
+        <br/>
+        <br/>
+        <footer class="w3-container w3-teal">
+            <p>
+                <a href = eserciziNatale.html><b>Esercizi natalizi</b></a><br/>
+                <a href = pag1.html><b>Home</b></a><br/>
+            </p>
+        </footer>
+
     </body>
 </html>

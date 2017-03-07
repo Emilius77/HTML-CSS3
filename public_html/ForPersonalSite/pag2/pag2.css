@@ -10,12 +10,12 @@ and open the template in the editor.
 
 #personal label {
     position: absolute;
-    left: 20px;
+    left: 40px;
     font-size: 90%;
     padding-top: .2em;
 }
 
-input {
+.inp {
     margin-left: 9em;
     margin-bottom: .2em;
     line-height: 1.4em;
@@ -23,6 +23,10 @@ input {
 
 p {
     color: black;
+}
+
+p#foot {
+    color: white;
 }
 
 p.group {

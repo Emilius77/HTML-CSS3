@@ -358,8 +358,188 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+
+
+a.block { 
+    display:block;
+    /*padding:5px; */
+    /*border:1px solid #666;*/ 
+    text-decoration: none
+}
+
+#corpo {
+    height: 590px;
+}
+
+div#sesamo {
+    text-align: center;
+    position: relative;
+    width: 900px;
+    height: 150px;
+    margin: auto;
+/*    border: 2px solid red;*/
+}
+
+div#sesamo div {
+    line-height: 150px;
+    font-size: 48px;
+    width: 150px;
+    height: 150px;
+    background-color: graytext;
+    opacity: 0;
+}
+
+div#sesamo div:nth-child(1) {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    font-size: 140px;
+    color: greenyellow;
+    background-color: orange;
+    animation: compariE;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(2) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: blue;
+    background-color: yellow;
+    transform: rotatey(-360deg);
+    animation: compariM;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(3) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: red;
+    background-color: green;
+    transform: rotatex(-360deg);
+    animation: compariI;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(4) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: black;
+    background-color: red;
+    transform: rotate(360deg);
+    animation: compariL;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(5) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: violet;
+    background-color: cyan;
+    transform: rotatey(360deg);
+    animation: compari_I;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+div#sesamo div:nth-child(6) {
+    position: absolute;
+    left: 220px;
+    top: 750px;
+    font-size: 140px;
+    color: whitesmoke;
+    background-color: black;
+    transform: rotateX(360deg);
+    animation: compariO;
+    animation-delay: 0s;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes compariE {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:red; left:0px; top:0px; opacity: 1;}
+}
+
+@keyframes compariM {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:yellow; left:150px; top:0px; opacity: 1;}
+}
+
+@keyframes compariI {
+   0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:green; left:300px; top:0px; opacity: 1;}
+}
+
+@keyframes compariL {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:orange; left:450px; top:0px; opacity: 1;}
+}
+
+@keyframes compari_I {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:cyan; left:600px; top:0px; opacity: 1;}
+}
+
+@keyframes compariO {
+    0%   {background-color:red; left:-200px; top:200px;}
+    20%  {background-color:yellow; left:-90px; top:-85px;}
+    40%  {background-color:blue; left:120px; top:100px;}
+    60%  {background-color:green; left:0px; top:200px;}
+    80%  {background-color:red; left:375px; top:0px;}
+    100% {background-color:black; left:750px; top:0px; opacity: 1;}
+}
+
+/*header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}*/
+
 footer {
     position: fixed;
     width: 100%;
     bottom: 0px;
+}
+
+#contenuto {
+    padding-left: 20px;
 }
