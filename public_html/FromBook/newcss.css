@@ -8,6 +8,10 @@ and open the template in the editor.
     Author     : Emilius
 */
 
+/*audio {
+    visibility: hidden;
+}*/
+
 #personal label {
     position: absolute;
     left: 20px;
