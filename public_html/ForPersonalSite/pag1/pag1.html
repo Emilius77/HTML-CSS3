@@ -24,71 +24,76 @@ and open the template in the editor.
                     <div title="Intro a JAVASCRIPT"><a href="../pag5/newhtml.html" class="block">O</a></div>
                 </div><br/>
             </div>
-        </header>  
+        </header> 
+        <div class="w3-bar w3-cyan">
+            <a class="w3-bar-item w3-button" href="pag1.html">Home</a>
+            <a class="w3-bar-item w3-button" href="pag1_tabella.html">Esercizi con Tabelle</a>
+            <a class="w3-bar-item w3-button" href="eserciziNatale.html">Esercizi natalizi</a>
+            <a class="w3-bar-item w3-button" href="form.html">Esercitazione Form</a>
+        </div>
         <div id="contenuto">
+            <br>
+            <div>All'interno del TAG (&lt;body&gt;) viene scritto il corpo della pagina HTML che vogliamo pubblicare.<br/>
+                Questo è solo l'inizio!!!<br/>
+                Muhahahahahahahah<br/>
+                <br/>
+            </div>
+            <div>La struttura del linguaggio HTML prevede che il codice venga scritto iniziando con dei TAG, parole<br/>
+                scritte all'interno dei caratteri speciali &lt; e &gt; <br/>
+                <br/>
+                Ci sono alcune cose da tenere in considerazione: <br/>
+                1) <b>Spazi:</b> possiamo inserire tutti gli spazi che vogliamo tra una parola e l'altra, maa il linguaggio HTML 5 ne considererà sempre e solo 1;<br/>
+                &nbsp; &nbsp; se vogliamo aggiungere spazi tra le parole, per il momento, dobbiamo usare (nbsp; nbsp; ) entrambi preceduti dall e commerciale (&) <br/>
+                2) <b>Andare a capo:</b> per mandare a capo una frase non basta l'invio ma  è necessario inserire il tag (&lt;br&gt;);<br/>
+                &nbsp; &nbsp; oppure si può inserire il blocco del tag div (&lt;div&gt; + &lt;/div&gt;)<br/>
+                3) se vogliamo fare un elenco puntato andremo a scrivere:<br/>
+                <ul>
+                    <li>elenco puntato</li>
+                    <li>elenco puntato</li>
+                </ul><br/>
+                4) se vogliamo fare un elenco numerato andremo a scrivere:<br/>
+                <ol start="100" type="I"> <!-- Così indichiamo che l'elenco partirà da 100 e sarà con il formato dei numeri romani -->
+                    <li>elenco numerato "uno"</li>
+                    <li>elenco numerato "due"</li>
+                </ol>
+            </div>
+            <br/>
+            <div>Per quanto riguarda la creazione di una tabella, ci sono alcune regole di base da tener in considerazione: <br/>
+                <ol start="1">
+                    <li>All'interno di una tabella ogni riga contiene delle celle;</li>
+                    <li>I dati di una tabella risiedono all'interno delle celle;</li>
+                    <li>Le tabelle (le celle che le compongono) si autoformattano in base ai dati inseriti</li>
+                </ol><br/>
+                Di seguito l'esempio di una tabella che prevede 3 righe con 4 celle per ogni riga.<br/>
+                <br/>
+                <table border ="1" style = "background-color: green">
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle">Marco</td>
+                        <td style="text-align: center; vertical-align: middle">Davide</td>
+                        <td style="text-align: center; vertical-align: middle">Alfonso</td>
+                        <td style="text-align: center; vertical-align: middle">Luca</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle">Lisa</td>
+                        <td style="text-align: center; vertical-align: middle"><a href = pag1_tabella.html><b>Tabella Immagini</b></a></td>
+                        <td style="text-align: center; vertical-align: middle">Marco</td>
+                        <td style="text-align: center; vertical-align: middle">Luca</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle">Giovanni</td>
+                        <td style="text-align: center; vertical-align: middle">Loredana</td>
+                        <td style="text-align: center; vertical-align: middle">Mirko</td>
+                        <td style="text-align: center; vertical-align: middle">PierGiorgio</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <br/>
         <br>
-        <div>All'interno del TAG (&lt;body&gt;) viene scritto il corpo della pagina HTML che vogliamo pubblicare.<br/>
-            Questo è solo l'inizio!!!<br/>
-            Muhahahahahahahah<br/>
-            <br/>
-        </div>
-        <div>La struttura del linguaggio HTML prevede che il codice venga scritto iniziando con dei TAG, parole<br/>
-            scritte all'interno dei caratteri speciali &lt; e &gt; <br/>
-            <br/>
-            Ci sono alcune cose da tenere in considerazione: <br/>
-            1) <b>Spazi:</b> possiamo inserire tutti gli spazi che vogliamo tra una parola e l'altra, maa il linguaggio HTML 5 ne considererà sempre e solo 1;<br/>
-            &nbsp; &nbsp; se vogliamo aggiungere spazi tra le parole, per il momento, dobbiamo usare (nbsp; nbsp; ) entrambi preceduti dall e commerciale (&) <br/>
-            2) <b>Andare a capo:</b> per mandare a capo una frase non basta l'invio ma  è necessario inserire il tag (&lt;br&gt;);<br/>
-            &nbsp; &nbsp; oppure si può inserire il blocco del tag div (&lt;div&gt; + &lt;/div&gt;)<br/>
-            3) se vogliamo fare un elenco puntato andremo a scrivere:<br/>
-            <ul>
-                <li>elenco puntato</li>
-                <li>elenco puntato</li>
-            </ul><br/>
-            4) se vogliamo fare un elenco numerato andremo a scrivere:<br/>
-            <ol start="100" type="I"> <!-- Così indichiamo che l'elenco partirà da 100 e sarà con il formato dei numeri romani -->
-                <li>elenco numerato "uno"</li>
-                <li>elenco numerato "due"</li>
-            </ol>
-        </div>
-        <br/>
-        <div>Per quanto riguarda la creazione di una tabella, ci sono alcune regole di base da tener in considerazione: <br/>
-            <ol start="1">
-                <li>All'interno di una tabella ogni riga contiene delle celle;</li>
-                <li>I dati di una tabella risiedono all'interno delle celle;</li>
-                <li>Le tabelle (le celle che le compongono) si autoformattano in base ai dati inseriti</li>
-            </ol><br/>
-            Di seguito l'esempio di una tabella che prevede 3 righe con 4 celle per ogni riga.<br/>
-            <br/>
-            <table border ="1" style = "background-color: green">
-                <tr>
-                    <td style="text-align: center; vertical-align: middle">Marco</td>
-                    <td style="text-align: center; vertical-align: middle">Davide</td>
-                    <td style="text-align: center; vertical-align: middle">Alfonso</td>
-                    <td style="text-align: center; vertical-align: middle">Luca</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center; vertical-align: middle">Lisa</td>
-                    <td style="text-align: center; vertical-align: middle"><a href = pag1_tabella.html><b>Tabella Immagini</b></a></td>
-                    <td style="text-align: center; vertical-align: middle">Marco</td>
-                    <td style="text-align: center; vertical-align: middle">Luca</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center; vertical-align: middle">Giovanni</td>
-                    <td style="text-align: center; vertical-align: middle">Loredana</td>
-                    <td style="text-align: center; vertical-align: middle">Mirko</td>
-                    <td style="text-align: center; vertical-align: middle">PierGiorgio</td>
-                </tr>
-            </table>
-        </div>
-        </div>
-        <br/>
-        <br/>
-        <br>
-        <footer class="w3-container w3-teal">
-            <p>
-                <a href = pag1_tabella.html><b>Esercizi con Tabelle</b></a><br/>
-            </p>
+        <footer class="w3-container w3-yellow">
+            <div class="tooltip"><a href = https://www.paypal.me/Emilius77><img src="immagini/paypal.png" alt="" style="width: 125px; height: 40px"/></a>
+            <span class="tooltiptext">Per contribuire alla mia formazione</span></div><br/>
         </footer>
     </body> 
 

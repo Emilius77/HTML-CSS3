@@ -13,12 +13,13 @@ and open the template in the editor.
         <link href="index.css" rel="stylesheet" type="text/css"/>
 
     </head>
-    <body>
-        <header class="w3-container w3-teal">
+
+    <body onload="window.open('audio/Payphone.mp3', 'titolopagina', 'scrollbars=no,status=no,resizable=no,top=0,left=0,  width=300,height=120')">
+        <header class="w3-container w3-white">
             <br>
             <div>
                 <div id="sesamo">
-                    <div title="Qui dobbiamo ancora decidere cosa far comparire">E</div>
+                    <div title="Pagina iniziale"><a href="#" class="block">E</a></div>
                     <div title="Primi passi con HTML"><a href="pag1/pag1.html" class="block">M</a></div>
                     <div title="Introduzione ai CSS"><a href="pag2/pag2.html" class="block">I</a></div>
                     <div title="Giochi con le tabelle"><a href="pag3/indexCss3_external.html" class="block">L</a></div>
@@ -29,19 +30,18 @@ and open the template in the editor.
         </header>  
         <br/><br/>
         <div id="contenuto">
-        <div id="corpo" class="w3-container">
-            <p>
-                Questo web site di presentazione vuole mostrare tutto il percorso che l'autore ha affrontato fino ad oggi!<br/>
-                Vogliamo ricordarvi che le conoscenze iniziali erano praticamente assenti, quindi sarà molto più facile <br/>
-                osservare all'interno delle varie pagine il cambiamento avvenuto con il tempo e con l'esperienza!
-            </p>
-        </div>
+            <div id="corpo" class="w3-container">
+                <p>
+                    Questo web site di presentazione vuole mostrare tutto il percorso che l'autore ha affrontato fino ad oggi!<br/>
+                    Vogliamo ricordarvi che le conoscenze iniziali erano praticamente assenti, quindi sarà molto più facile <br/>
+                    osservare all'interno delle varie pagine il cambiamento avvenuto con il tempo e con l'esperienza!
+                </p>
             </div>
+        </div>
 
-        <footer class="w3-container w3-teal">
-            <p>
-                Qui andremo a scrivere alcune info sull'autore
-            </p>
+        <footer class="w3-container w3-yellow">
+            <div class="tooltip"><a href = https://www.paypal.me/Emilius77><img src="pag1/immagini/paypal.png" alt="" style="width: 125px; height: 40px"/></a>
+            <span class="tooltiptext">Per contribuire alla mia formazione</span></div><br/>
         </footer>
 
     </body>
