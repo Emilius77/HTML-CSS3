@@ -2,5 +2,7 @@
     "elements": {
         "href:tabella.html": {}
     },
-    "attributes": {}
+    "attributes": {
+        "dato": {}
+    }
 }

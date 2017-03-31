@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-mar-2017, 10.58.31
+    Author     : tss
+*/
+
+#personal label {
+    position: absolute;
+    left: 20px;
+    font-size: 90%;
+    padding-top: .2em;
+}
+
+input {
+    margin-left: 9em;
+    margin-bottom: .2em;
+    line-height: 1.4em;
+}
+
+.pallina {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.blu {
+    background-color: blue;
+}
+
+.giallo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+.arancio {
+    background-color: orange;
+}
+
+.viola {
+    background-color: purple;
+}
+
+.rosso {
+    background-color: red;
+}

@@ -1,0 +1,1 @@
+{"cognome":"Guerrini", "nome":"Luca", "email":"lg@gmail.com"}
